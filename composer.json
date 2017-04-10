@@ -1,0 +1,13 @@
+{
+    "name": "dbmover/mysql-constraints",
+    "description": "Dbmover plugin for (re)creating MySQL constraints",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marijn Ophorst",
+            "email": "marijn@monomelodies.nl"
+        }
+    ],
+    "require": {}
+}
