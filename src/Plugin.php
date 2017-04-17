@@ -17,9 +17,6 @@ class Plugin extends Constraints\Plugin
     {
         if ($type == 'FOREIGN KEY') {
             $this->addOperation("ALTER TABLE $table DROP FOREIGN KEY $constraint;");
-        } elseif ($type == 'PRIMARY KEY') {
-            $info = $this->getPrimaryKeyInfo($table);
-            $this->addOperation("ALTER TABLE $table DROP PRIMARY KEY, CHANGE {$info['column_name']} {$info['column_name']} {$info['column_type']};");
         }
     }
 
